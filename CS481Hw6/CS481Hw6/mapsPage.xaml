@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:maps" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" x:Class="maps.mapsPage">
+	<StackLayout>
+         <Picker x:Name="PMap" Title="Select MapType" SelectedIndexChanged="Handle_SelectedIndexChanged" Margin="10"/>
+        
+    <maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" IsShowingUser="true" MapType="Satellite"  Margin="10"/>
+     
+    </StackLayout>
+
+</ContentPage>
